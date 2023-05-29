@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: background-color 1s ease;
+    margin: 0;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #DC8665, #138086, #534666, #CD7672, #EEB462);
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 1s ease; 
+}
+
+.container-2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 1s ease;
+    background-color: transparent;
+}
+
+
+.button-circle {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 400vw;
+    background-color: transparent;
+    color: white;
+    font-family: space grotesk;
+    font-size: 4vw;
+    font-weight: 100;
+    padding: 15vw;
+    margin-top: 25vw;
+}
+
+
+h2 {
+    color: white;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 9vw;
+    margin-bottom: 0vw;
+    margin-top: 15vw;
+}
+
+h1 {
+    color: white;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 20vw;
+    margin-bottom: -2vw;
+}
+
+h3 {
+    color: white;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 5vw;
+    margin-bottom: 0vw;
+    top: 32vw;
+}
+
+h6 {
+    margin-top: 0vw;
+    color: white;
+    font-family: Space Grotesk;
+    font-weight: 200;
+    font-size: 4vw;
+}
+
+.status-container {
+    position: absolute;
+    top: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-container {
+    display: flex;
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 5vw;
+    padding: 0;
+    color: white;
+    font-family: Space Grotesk;
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.again-class {
+    border: 1px solid white;
+    border-radius: 400vw;
+    background-color: transparent;
+    color: white;
+    font-family: space grotesk;
+    font-size: 5vw;
+    font-weight: 400;
+    padding: 1vw 8vw;
+    margin-top: 10vw;
+}
+
+.list-container-desk {
+    display: flex;
+    position: absolute;
+    bottom: 151vw;
+    left: 28vw;
+}
+
+.container-desk {
+    height: 400vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #DC8665, #138086, #534666, #CD7672, #EEB462);
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 1s ease; 
+    position: relative; 
+    bottom: 10vw;
+}
+
+.qr {
+    position: relative;
+    top: -6vw;
+}
