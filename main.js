@@ -33,7 +33,6 @@ const colors = [
   "#6A1D2F",
   "#354C3C",
   "#42354C"
-
 ]
 
 let previousIndex = -1;
@@ -79,65 +78,61 @@ function revealData() {
   buttonOne.classList.remove('animate__infinite', 'animate__pulse');
   buttonOne.classList.add('animate__animated', 'animate__rotateOut');
 
-  setTimeout(function() {
-    tempDisplay.classList.add('animate__animated', 'animate__fadeInUp');
-    tempDisplay.classList.remove('hidden');
-  }, 1000);
+    setTimeout(function() {
+      tempDisplay.classList.add('animate__animated', 'animate__fadeInUp');
+      tempDisplay.classList.remove('hidden');
+    }, 1000);
 
-  setTimeout(function() {
-    conditionsDisplay.classList.add('animate__animated', 'animate__fadeInUp');
-    conditionsDisplay.classList.remove('hidden');
-  }, 1800);
+      setTimeout(function() {
+        conditionsDisplay.classList.add('animate__animated', 'animate__fadeInUp');
+        conditionsDisplay.classList.remove('hidden');
+      }, 1800);
 
-  setTimeout(function() {
-    locationDisplay.classList.add('animate__animated', 'animate__fadeInUp');
-    locationDisplay.classList.remove('hidden');
-  }, 2200);
+        setTimeout(function() {
+          locationDisplay.classList.add('animate__animated', 'animate__fadeInUp');
+          locationDisplay.classList.remove('hidden');
+        }, 2200);
 
-  setTimeout(function() {
-    containerTwo.style.backgroundColor = getRandomColor();
-  }, 2850);
+          setTimeout(function() {
+            containerTwo.style.backgroundColor = getRandomColor();
+          }, 2850);
 
-  setTimeout(function() {
-    colorOutputDisplay.classList.add('animate__animated', 'animate__fadeInUp');
-    colorOutputDisplay.classList.remove('hidden');
-  }, 2900);
+            setTimeout(function() {
+              colorOutputDisplay.classList.add('animate__animated', 'animate__fadeInUp');
+              colorOutputDisplay.classList.remove('hidden');
+            }, 2900);
 
-  setTimeout(function() {
-    againButton.classList.add('animate__animated', 'animate__fadeInUp');
-    againButton.classList.remove('hidden');
-  }, 3600);
+              setTimeout(function() {
+                againButton.classList.add('animate__animated', 'animate__fadeInUp');
+                againButton.classList.remove('hidden');
+              }, 3600);
 
 }
 
 function rC2() {
 
   function getRandomColorAgain() {
+      let colorIndex; 
+      do {
+        colorIndex = Math.floor(Math.random() * colors.length);
+      } while (colorIndex === previousIndex);
 
-    let colorIndex; 
-  
-    do {
-      colorIndex = Math.floor(Math.random() * colors.length);
-    } while (colorIndex === previousIndex);
-  
-    previousIndex = colorIndex;
-    const randomColor = colors[colorIndex];
-  
-    return randomColor;
-  
-  
-    
+      previousIndex = colorIndex;
+      const randomColor = colors[colorIndex];
+
+      return randomColor;
   }
 
   const getRC = getRandomColorAgain();
-  againButton.classList.remove('animate__fadeInUp');
-  againButton.classList.add('animate__headShake');
-  containerTwo.style.backgroundColor = getRC;
-  colorOutputDisplay.innerHTML = getRC;
+  
+    againButton.classList.remove('animate__fadeInUp');
+    againButton.classList.add('animate__headShake');
+    containerTwo.style.backgroundColor = getRC;
+    colorOutputDisplay.innerHTML = getRC;
 
-  setTimeout(function() {
-    againButton.classList.remove('animate__headShake');
-  }, 700);
+    setTimeout(function() {
+      againButton.classList.remove('animate__headShake');
+    }, 700);
 
 }
 
