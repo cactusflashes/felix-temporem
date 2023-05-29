@@ -16,5 +16,5 @@ var isMobile = {
 }; 
 
 if (isMobile.any()) {
-    window.location = 'https://tangerine-cucurucho-329e3e.netlify.app/app'; 
+    window.location = 'https://felixtemporem.app/app'; 
 }
