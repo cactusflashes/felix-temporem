@@ -5,6 +5,7 @@ body {
     overflow-y: hidden;
     transition: background-color 1s ease;
     margin: 0;
+    height: 100vh;
 
 }
 
