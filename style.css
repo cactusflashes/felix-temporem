@@ -157,7 +157,7 @@ li {
 }
 
 .qr {
-    position: absolute;
-    top: -94vw;
-    scale: 0.1;
+    position: relative;
+    top: -5vw;
+    max-width: 25%;
 }
